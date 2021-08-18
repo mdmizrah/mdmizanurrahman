@@ -1,0 +1,74 @@
+
+ @mixin translate($x,$y){
+
+ 	-webkit-transform: translate($x, $y);
+ 	 -ms-transform: translate($x, $y);  
+ 	 transform: translate($x, $y);
+ }
+
+.bg-dark {
+    background-color: #000000!important;
+}
+
+
+.heading{
+ 
+  text-align:center;
+
+    .line{
+      
+    position: relative;
+    height: 3px;
+    width: 400px;
+    background: #00d07e;
+    display: block;
+    margin: 0 auto;
+
+     
+      &::after{
+
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #007445;
+    bottom: 50%;
+    @include translate(50%,50%);
+    right: 50%;
+    border-radius: 2px 2px 2px 2px;
+
+    animation-name: Heading;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    transition: all 3s linear;
+    
+    }
+
+
+    }
+
+}
+
+@keyframes Heading{
+	0%{
+        @include translate(50%,50%);
+	}
+	25%{
+        right: 0;
+        @include translate(0,50%);
+	}
+	50%{
+        right: 50%;
+        @include translate(50%,50%);
+       
+	}
+	75%{
+        right: 100%;
+        @include translate(100%,50%);
+	}
+	100%{
+        right: 50%;
+        @include translate(50%,50%);
+	}
+}
