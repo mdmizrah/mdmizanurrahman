@@ -121,6 +121,6 @@ jQuery(document).ready(function($) {
   var submitted = false;
   $('#gform').on('submit', function(e) {
   $('#gform *').slideUp(2000);
-  $('#gform').prepend('Your Message has been sent to the admin...');
+  $('#gform').prepend('Thanks for being connected to me :-)');
 });
   //submited of clients data sheet js ends
