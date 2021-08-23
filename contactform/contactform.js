@@ -116,3 +116,11 @@ jQuery(document).ready(function($) {
   });
 
 });
+
+  //submited of clients data sheet js starts
+  var submitted = false;
+  $('#gform').on('submit', function(e) {
+  $('#gform *').slideUp(2000);
+  $('#gform').prepend('Your Message has been sent to the admin...');
+});
+  //submited of clients data sheet js ends
