@@ -22,6 +22,16 @@
   display: grid !important;
 }
 
+.behance{
+  margin: 40px auto !important;
+  display: grid !important;
+}
+
+.dribbble{
+  margin: 40px auto !important;
+  display: grid !important;
+}
+
 .mi{
   width: 150px;
 }
