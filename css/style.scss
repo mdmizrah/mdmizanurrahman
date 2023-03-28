@@ -5,15 +5,6 @@
  	 -ms-transform: translate($x, $y);  
  	 transform: translate($x, $y);
  }
-
-@mixin make-container() {
-  width: 100%;
-  padding-right: 0!important;
-  padding-left: 0!important;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .bg-dark {
     background-color: #000000!important;
 }
