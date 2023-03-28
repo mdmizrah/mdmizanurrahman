@@ -463,7 +463,9 @@ a:hover {
 /*======================================
 //--//-->   NAVBAR
 ======================================*/
-
+.navbar-nav{
+ font-size: 13px!important;
+}
 .navbar-b {
   transition: all .5s ease-in-out;
   background-color: transparent;
@@ -573,7 +575,7 @@ a:hover {
 
 .navbar-b .navbar-brand {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 20px!important;
   font-weight: 600;
 }
 
